@@ -3,6 +3,7 @@ package http2
 import (
 	"bufio"
 	"bytes"
+	"fmt"
 	// "crypto/tls"
 	"io"
 	"io/ioutil"
@@ -41,6 +42,7 @@ func (c *Client) Post(data []byte) {
 	path := os.Getenv("POST_PATH")
 	auth := fmt.Sprintf("Bearer %s", os.Getenv("POST_KEY"))
 	
+	log.Println("POST", host, path)
 	req := &http.Request{
 		Method: "POST",
 		URL: &url.URL{
