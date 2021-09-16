@@ -27,12 +27,12 @@ func main() {
 	}()
 
 	// HTTP2 Server
-	server := new(http2.Server)
-	err = server.Initialize()
-	if err != nil {
-		log.Println(err)
-		return
-	}
+	// server := new(http2.Server)
+	// err = server.Initialize()
+	// if err != nil {
+	// 	log.Println(err)
+	// 	return
+	// }
 
 	// Waits forever
 	<-waitc
