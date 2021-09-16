@@ -1,3 +1,8 @@
+## env vars
+POST_HOST
+POST_PATH
+POST_KEY
+
 ## Example of HTTP/2 Streaming in Go
 
 Install the required packages:
@@ -12,3 +17,4 @@ Run Client & Server together to see it in action:
 ```sh
 $ go run main.go
 ```
+
